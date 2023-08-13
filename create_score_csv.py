@@ -26,7 +26,7 @@ if __name__ == "__main__":
         file.write(HEADER)
 
     # get scores by year
-    for year in tqdm(range(2016, 2023, 1)): # 2016-2023
+    for year in tqdm(range(2016, 2024, 1)): # 2016-2023
         base_url: str = f"https://www.dci.org/scores/final-scores/{year}-dci-world-championship-finals"
         if year == 2016:
             base_url = base_url.replace("championship", "championships")
